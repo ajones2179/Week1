@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Celsius to Fahrenheit Function</title>
+    </head>
+    <body>
+        <script>
+            var cTemp = 100;  //input argument (independent variable of function)
+            function celsiusToFahrenheit(celsius) {  //define function with argument celsius
+                var fahrenheit = ((celsius * 9) /5) + 32;  //function equation
+                return celsius + " degrees Celsius = "+ fahrenheit + " degrees Fahrenheit";  //function output
+            }
+            var message = celsiusToFahrenheit(cTemp);  //calculate function and store in message variable
+            alert(message);  //message return statement in alert window
+        </script>
+    </body>
+</html>

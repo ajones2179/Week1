@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capitalize</title>
+    </head>
+    <body>
+        <script>
+            var sampleStr = "This function will capitalize the first letter of every word of this sentence."
+            function capitalize(str) {  //define function and assign argument
+                var trimmedStr = str.trim();  //trim any empty space at the beginning of the string
+                var finalStr = "";  //set finalStr to empty to fill with each character
+                for (let i = 0; i < trimmedStr.length; i++) {  //for loop checks each character of string and does following
+                    if (i === 0 || trimmedStr[i-1] === " ") {  //if character shows up after a blank space...
+                        finalStr += trimmedStr[i].toUpperCase();  //...capitalize it and save it to finalStr
+                    } else {  //otherwise
+                    finalStr += trimmedStr[i];  //put every other character from the string in the finalStr
+                    }
+                }
+            return finalStr;  //function returns completed finalStr
+            }
+            document.write(capitalize(sampleStr));  //print the capitalized string using the example sampleStr above
+        </script>
+    </body>
+</html>
